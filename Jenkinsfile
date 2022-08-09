@@ -6,7 +6,7 @@ pipeline {
 
         stage ('Initialization') {
             steps {
-                sh 'echo "Starting the build"'
+                sh 'echo "Starting the build."'
             }
         }
 
