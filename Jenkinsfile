@@ -27,3 +27,6 @@ pipeline {
 		sh '/home/b310v3_jenkins_test}/eslint-script.sh'
 	    }
 	}
+    }
+
+}
