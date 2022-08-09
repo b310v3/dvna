@@ -12,7 +12,14 @@ pipeline {
 
 	stage ('Build') {
             steps {
-                sh 'npm install'
+                sh '''
+                    export MYSQL_USER=root
+                    export MYSQL_DATABASE=dvna
+                    export MYSQL_PASSWORD=<MYSQL PASSWORD>
+                    export MYSQL_HOST=127.0.0.1
+                    export MYSQL_PORT=3306
+                    npm install
+                   '''
 	    }
         }
 
